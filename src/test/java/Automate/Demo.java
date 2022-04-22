@@ -89,6 +89,7 @@ public class Demo {
 
         var sendOtp = wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("commonButtonRed margin50")));
         sendOtp.click();
+        System.out.println("wkefbefb");
 
 
     }
