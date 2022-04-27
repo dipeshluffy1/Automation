@@ -27,7 +27,7 @@ public class GoogleLogin {
     private static final String EMAIL_INPUT_ID = "identifierId";
     private static final String PHONE_INPUT_ID = "phoneNumberId";
     private static final String PHONE_VERIFICATION_BUTTON_XPATH = "/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div/ul/li[4]";
-    private static final String LOGIN_BUTTON_XPATH = "/html/body/div[2]/div/div[2]/div/div[2]/div/div/div/button[1]";
+//    private static final String LOGIN_BUTTON_XPATH = "/html/body/div[2]/div/div[2]/div/div[2]/div/div/div/button[1]";
     private static final String EMAIL = "EMAIL";
     private static final String PASSWORD = "PASSWORD";
     private static final String PHONE = "PHONE";
@@ -44,7 +44,7 @@ public class GoogleLogin {
 
     public void automate() {
         try {
-            webDriver.findElement(By.xpath(LOGIN_BUTTON_XPATH)).click();
+//            webDriver.findElement(By.xpath(LOGIN_BUTTON_XPATH)).click();
             setEmailAndContinue();
             setPasswordAndContinue();
             checkPhoneVerificationAndContinue();
